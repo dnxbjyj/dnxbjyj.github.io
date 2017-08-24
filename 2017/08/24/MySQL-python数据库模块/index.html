@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="mysql-pythn connector database," />
+  <meta name="keywords" content="mysql-pythonn connector database," />
 
 
 
@@ -96,13 +96,14 @@
 
 
 <meta name="description" content="准备工作安装mysql Linux (Ubuntu)  apt-get install mysql-server 安装完成之后在命令行中输入：mysql -uroot -proot，看是否能够成功登入MySQL命令行，如果能够成功登入，则说明安装成功。  Windows  下载MSI安装包mysql-installer-community-5.7.19.0.msi安装，官网地址：https://d">
-<meta name="keywords" content="mysql-pythn connector database">
+<meta name="keywords" content="mysql-pythonn connector database">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL-python数据库模块">
 <meta property="og:url" content="http://yoursite.com/2017/08/24/MySQL-python数据库模块/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="微琪记">
 <meta property="og:description" content="准备工作安装mysql Linux (Ubuntu)  apt-get install mysql-server 安装完成之后在命令行中输入：mysql -uroot -proot，看是否能够成功登入MySQL命令行，如果能够成功登入，则说明安装成功。  Windows  下载MSI安装包mysql-installer-community-5.7.19.0.msi安装，官网地址：https://d">
-<meta property="og:updated_time" content="2017-08-24T14:52:52.914Z">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-08-24T15:36:32.784Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL-python数据库模块">
 <meta name="twitter:description" content="准备工作安装mysql Linux (Ubuntu)  apt-get install mysql-server 安装完成之后在命令行中输入：mysql -uroot -proot，看是否能够成功登入MySQL命令行，如果能够成功登入，则说明安装成功。  Windows  下载MSI安装包mysql-installer-community-5.7.19.0.msi安装，官网地址：https://d">
@@ -121,7 +122,7 @@
     motion: true,
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -141,7 +142,7 @@
 
 
 
-  <title>MySQL-python数据库模块 | Hexo</title>
+  <title>MySQL-python数据库模块 | 微琪记</title>
   
 
 
@@ -153,7 +154,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -171,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">微琪记</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -201,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            首页
           </a>
         </li>
       
@@ -241,13 +242,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/24/MySQL-python数据库模块/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Miao">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="微琪记">
     </span>
 
     
@@ -265,9 +266,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-24T22:44:19+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-24T22:44:19+08:00">
                 2017-08-24
               </time>
             
@@ -370,6 +371,7 @@
 <li>查询person表：<code>select * from person;</code></li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">mysql&gt; select * from person;</div><div class="line">+----+------+------+</div><div class="line">| id | name | age  |</div><div class="line">+----+------+------+</div><div class="line">|  1 | Tom  |   18 |</div><div class="line">|  2 | John |   23 |</div><div class="line">|  3 | Amy  |   15 |</div><div class="line">+----+------+------+</div><div class="line">3 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</div></pre></td></tr></table></figure>
+<p>可以看到成功插入数据。</p>
 <h1 id="用python操作数据库"><a href="#用python操作数据库" class="headerlink" title="用python操作数据库"></a>用python操作数据库</h1><h3 id="连接mysql"><a href="#连接mysql" class="headerlink" title="连接mysql"></a>连接mysql</h3><p>导入包：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> MySQLdb</div></pre></td></tr></table></figure>
 <p>获取数据库连接对象：</p>
@@ -417,7 +419,7 @@
 【Output 3】
 (1L, &apos;Tom&apos;, 18L)
 (2L, &apos;John&apos;, 23L)
-</code></pre>
+</code></pre><h1 id="其他注意事项"><a href="#其他注意事项" class="headerlink" title="其他注意事项"></a>其他注意事项</h1>
       
     </div>
     
@@ -434,7 +436,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mysql-pythn-connector-database/" rel="tag"># mysql-pythn connector database</a>
+            <a href="/tags/mysql-pythonn-connector-database/" rel="tag"># mysql-pythonn connector database</a>
           
         </div>
       
@@ -509,10 +511,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
+            站点概览
           </li>
         </ul>
       
@@ -521,10 +523,10 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="John Doe" />
-          <p class="site-author-name" itemprop="name">John Doe</p>
+               alt="Miao" />
+          <p class="site-author-name" itemprop="name">Miao</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Hello,Miao and Mie.</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -535,7 +537,7 @@
               <a href="/archives">
             
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
@@ -548,7 +550,7 @@
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">标签</span>
               
             </div>
           
@@ -567,6 +569,8 @@
         
         
 
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=25730757&auto=1&height=66"></iframe>
+
         
 
 
@@ -582,7 +586,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装mysql"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装mysql</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装MySQL-python驱动模块"><span class="nav-number">1.0.2.</span> <span class="nav-text">安装MySQL-python驱动模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证安装是否成功"><span class="nav-number">1.0.3.</span> <span class="nav-text">验证安装是否成功</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在virtualenv虚拟化环境中安装MySQL-python"><span class="nav-number">1.0.4.</span> <span class="nav-text">在virtualenv虚拟化环境中安装MySQL-python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预置mysql数据"><span class="nav-number">1.0.5.</span> <span class="nav-text">预置mysql数据</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用python操作数据库"><span class="nav-number">2.</span> <span class="nav-text">用python操作数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#连接mysql"><span class="nav-number">2.0.1.</span> <span class="nav-text">连接mysql</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#执行sql语句插入数据"><span class="nav-number">2.0.2.</span> <span class="nav-text">执行sql语句插入数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#批量插入数据"><span class="nav-number">2.0.3.</span> <span class="nav-text">批量插入数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除数据"><span class="nav-number">2.0.4.</span> <span class="nav-text">删除数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新数据"><span class="nav-number">2.0.5.</span> <span class="nav-text">更新数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数据"><span class="nav-number">2.0.6.</span> <span class="nav-text">查询数据</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装mysql"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装mysql</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装MySQL-python驱动模块"><span class="nav-number">1.0.2.</span> <span class="nav-text">安装MySQL-python驱动模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证安装是否成功"><span class="nav-number">1.0.3.</span> <span class="nav-text">验证安装是否成功</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在virtualenv虚拟化环境中安装MySQL-python"><span class="nav-number">1.0.4.</span> <span class="nav-text">在virtualenv虚拟化环境中安装MySQL-python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预置mysql数据"><span class="nav-number">1.0.5.</span> <span class="nav-text">预置mysql数据</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用python操作数据库"><span class="nav-number">2.</span> <span class="nav-text">用python操作数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#连接mysql"><span class="nav-number">2.0.1.</span> <span class="nav-text">连接mysql</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#执行sql语句插入数据"><span class="nav-number">2.0.2.</span> <span class="nav-text">执行sql语句插入数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#批量插入数据"><span class="nav-number">2.0.3.</span> <span class="nav-text">批量插入数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除数据"><span class="nav-number">2.0.4.</span> <span class="nav-text">删除数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新数据"><span class="nav-number">2.0.5.</span> <span class="nav-text">更新数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数据"><span class="nav-number">2.0.6.</span> <span class="nav-text">查询数据</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他注意事项"><span class="nav-number">3.</span> <span class="nav-text">其他注意事项</span></a></li></ol></div>
             
 
           </div>
@@ -609,17 +613,17 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Miao</span>
 
   
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
 
 
         
