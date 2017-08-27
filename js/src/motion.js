@@ -304,5 +304,4 @@ $(document).ready(function () {
       integrator.next();
     }
   };
-
 });
