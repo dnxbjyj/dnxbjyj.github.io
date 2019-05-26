@@ -1,2 +1,2 @@
 * About
-aThis is my personal blog.
+This is my personal blog.
